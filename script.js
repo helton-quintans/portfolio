@@ -3,7 +3,6 @@ document.querySelector('.hamburguer').addEventListener("click", () => {
     document.querySelector('.container').classList.toggle("show-menu")
 })
 
-
 document.querySelector('#qtde').addEventListener('change', atualizarPreco)
 document.querySelector('#js').addEventListener('change', atualizarPreco)
 document.querySelector('#layout-sim').addEventListener('change', atualizarPreco)
@@ -13,9 +12,6 @@ document.querySelector('#prazo').addEventListener('change', function(){
     document.querySelector('label[for=prazo]').innerHTML = `Prazo ${prazo} semanas`
     atualizarPreco()
 })
-
-
-
 
 function atualizarPreco(){
     const qtde = document.querySelector('#qtde').value
@@ -29,7 +25,6 @@ function atualizarPreco(){
     let taxaUrgencia = 1 -prazo * .1
     preco *= 1 + taxaUrgencia
 
-    
     document.querySelector('#preco').innerHTML = `R$ ${preco.toFixed(2).replace('.', ',')}`
 }
 
