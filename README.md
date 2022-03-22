@@ -43,7 +43,6 @@ Tecnologias e ferramentas utilizadas no desenvolvimento do projeto:
 - HTML
 - CSS
 - Javascript
-<br>
 
  ## Tarefas
 
